@@ -32,11 +32,11 @@
                     type = types.int; default = 8012; description =
                     "Port for the WSH service";
                   }; host_mode = mkOption {
-                    type = types.string; default = "mirror"; description =
+                    type = types.str; default = "mirror"; description =
                     "Mode for the WSH service: 'mirror' or 'local'";
                   }; mirror = {
                     url = mkOption {
-                      type = types.string;
+                      type = types.str;
                       default = "https://wsh.draculente.eu";
                       description = "URL for the mirror";
                     };
